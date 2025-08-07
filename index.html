@@ -2,28 +2,35 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Personal Profile</title>
+    <title>YueXiang</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> 
 </head>
 <body>
-
+    
     <!-- Navigation -->
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#aboutme">About Me</a>
-        <a href="#experience">Work Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#skills">Skills</a>
+    <nav id="nav">
+        <!-- Mobile toggle button -->
+        <a class="mobile-btn" id="nav-toggle" href="#" title="Toggle navigation" aria-label="Toggle navigation" aria-expanded="false">☰</a>
+        <!-- Navigation links -->
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#aboutme">About Me</a>
+            <a href="#experience">Work Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+        </div>
     </nav>
 
     <!-- Sections -->
     <section id="home">
-        <h2>Home</h2>
-        <p>Welcome to the personal profile page of <strong>Yue Xiang TEO</strong>.</p>
+    <div class="profile-container">
+        <img src="profilepic.jpg" alt="Profile photo of [name]" class="profile-pic" />
+        <p>Welcome to the personal profile page of <strong>YueXiang TEO</strong>.</p>
+    </div>
     </section>
-
     <section id="aboutme">
         <h2>About me</h2>
         <p>I am a lifelong student of the world, always ready to gain knowledge about this world we lived in, especially in Science and Engineering. 
@@ -105,6 +112,8 @@
         <p><strong>Tools & Frameworks:</strong> 
             <br>Git, VS Code, Anaconda, SolidWorks, AutoCAD, LTspice, MS Office (incl. VBA), Adobe (PS, LR, AI), Android Studio, Verilog, ROS, Unity, Vuforia, RESTful API, MySQL</p>
     </section>
+    <script src="js/navbut.js"></script> 
+    <script src="js/smooth.js"></script> 
 
 </body>
 </html>

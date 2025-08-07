@@ -11,7 +11,18 @@ body {
     background-color: #f4f4f4;
     color: #333;
 }
+.profile-container {
+    display: flex;
+    align-items: center;
+    gap: 20px; /* space between image and text */
+}
 
+.profile-pic {
+    width: 120px; /* adjust as needed */
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%; /* makes it circular */
+}
 /* nav styles */
 nav {
     background-color: #1e1e2f;
@@ -23,8 +34,15 @@ nav {
     z-index: 1000;
     padding: 15px 0;
 }
-
-nav a {
+.mobile-btn {
+    display: none; /* hide on desktop */
+}
+.nav-links {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.nav-links a {
     color: white;
     text-decoration: none;
     margin: 0 20px;
@@ -32,7 +50,7 @@ nav a {
     transition: color 0.3s ease;
 }
 
-nav a:hover {
+.nav-links a:hover {
     color: #00bcd4;
 }
 
@@ -55,17 +73,42 @@ ul {
     margin-left: 20px;
 }
 
-/* response styles */
+/* Show the mobile toggle button */
 @media (max-width: 600px) {
-    nav {
+    .mobile-btn {
+        display: block;
+        background-color: #333;
+        color: white;
+        padding: 10px 15px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 24px;
+        border-radius: 4px;
+        position: absolute;     /* Changed from static to absolute */
+        top: 10px;
+        right: 20px;            /* Aligns to the right edge */
+        z-index: 1001;
+        margin: 0;              /* Removes default margin */    
+    }
+
+    /* Fix nav layout to not push content */
+    #nav {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+    /* Hide nav links by default */
+    .nav-links {
+        display: none;
         flex-direction: column;
+        margin-top: 5px 0;
     }
 
-    nav a {
-        margin: 10px 0;
+    /* Show nav links when nav has class 'active' */
+    #nav.active .nav-links {
+        display: flex;
     }
-
-    section {
-        margin: 20px;
+    .profile-pic {
+        display: none;
     }
 }
