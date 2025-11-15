@@ -28,7 +28,16 @@
     <section id="home">
     <div class="profile-container">
         <img src="profilepic.jpg" alt="Profile photo of [name]" class="profile-pic" />
-        <p>Welcome to the personal profile page of <strong>YueXiang TEO</strong>.</p>
+        <div class="profile-info">
+            <p>Welcome to the personal profile page of <strong>YueXiang TEO</strong>.</p>
+            <div class="profile-links">
+                <a href="https://github.com/Y-Xiang">GitHub</a> 
+                <span class="separator">|</span>
+                <a href="yxteo@outlook.com">Email</a>
+                <!--span class="separator">|</span>
+                <a href="https://linkedin.com/in/XXX">LinkedIn</a-->
+            </div>
+        </div>
     </div>
     </section>
     <section id="aboutme">
@@ -38,9 +47,10 @@
             <br>A critical thinker with a strong foundation in scientific and engineering principles, I approach problems from varied perspectives to develop innovative solutions. 
             I am currently advancing my practical skills in machine learning, artificial intelligence, and data science, with a focus on data-driven modelling and real-world application. 
             Being passionate about emerging technologies, I remain committed to continuous learning in high-impact, interdisciplinary domains.
-            </p>
-            <br>
+        </p>
+        <br>
         <hr width="100%" size="2">
+        <br>
         <h2>Education</h2>
         <strong>Master of Science (Statistics & Data Science)</strong>
         <br>Leiden University<span style="float:right;">Feb 2024 - </span>
@@ -57,7 +67,14 @@
             <li>Design a custom electronics module for SONAR application, meeting underwater requirements.</li>
             <li>Led the implementation and integration of the electronics module in full-scale SONAR development, ensuring alignment with customer requirements.</li>
             <li>Created a software prototype leveraging machine learning to classify hydrophone performance.</li>
-        </ul>    
+        </ul>
+        <div class="tags">
+            <span class="tag">#CircuitDesign</span>
+            <span class="tag">#PowerAnalysis</span>
+            <span class="tag">#MachineLearning</span>
+            <span class="tag">#CustomerFocus</span>
+            <!--button class="tag expandtag">...</button-->
+        </div>    
         <br>
         <strong>Internet of Things (IoT) Engineer</strong>
         <br>REDEX (formally T-RECs.ai), Singapore <span style="float:right;">Jul 2020 - Mar 2021</span>
@@ -65,7 +82,15 @@
             <li>Prototyped an Internet of Things (IoT)-enabled energy monitoring system to streamline verification process for Renewable Energy Certificates verification.</li>
             <li>Implemented data upload of real-time energy output tracking through RESTful API and MySQL.</li>
             <li>Project management for an Energy Storage System (ESS) project optimized by machine learning, through coordinating project timeline and aligning technical and business goals.</li>
-        </ul>    
+        </ul> 
+        <div class="tags">
+            <span class="tag">#CircuitDesign</span>
+            <span class="tag">#ProductDesign</span>
+            <span class="tag">#API</span>
+            <span class="tag">#SQL</span>
+            <span class="tag">#ProjectManagement</span>
+            <!--button class="tag expandtag">...</button-->
+        </div>       
         <br>
     </section>
 
@@ -76,6 +101,18 @@
         <ul>
             <li>Developed a data analysis framework to help the client understand students by linking their Learning My Way program portfolio data to their seminar experience.</li>
         </ul>
+        <!--button id="myBtn", class="modal_btn">More info</button>
+        <div id="myModal" class="modal">
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h4>Problem Statement</h4>
+                <p>asd</p>
+                <h4>Our Solution</h4>
+                <h4>My Role</h4>
+                <h4>Skills Used/Learnt</h4>
+            </div>
+        </div>
+        <br-->
         <br>
         <strong>Robotic Arm for Disability Assistance</strong> 
         <br><i>SUTD Capstone project</i>
@@ -113,7 +150,8 @@
             <br>Git, VS Code, Anaconda, SolidWorks, AutoCAD, LTspice, MS Office (incl. VBA), Adobe (PS, LR, AI), Android Studio, Verilog, ROS, Unity, Vuforia, RESTful API, MySQL</p>
     </section>
     <script src="js/navbut.js"></script> 
-    <script src="js/smooth.js"></script> 
+    <script src="js/smooth.js"></script>
+    <script src="js/modal.js"></script> 
 
 </body>
 </html>
